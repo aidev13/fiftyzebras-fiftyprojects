@@ -39,13 +39,26 @@ const update = () => {
 
    progress.style.width = (actives.length - 1) / (circle.length - 1) * 100 + '%'
 
+   const text = document.getElementById('text')
+
    if(currentActive === 1) {
-      prevBtn.disabled = true
+      prevBtn.disabled = true     
    } else  if (currentActive === circle.length) {
       nextBtn.disabled = true
    } else {
       prevBtn.disabled = false
       nextBtn.disabled = false
    }
+
+   if(currentActive <= 1) {
+      text.textContent = "Daddy Chill" 
+   } else if(currentActive === 2) {
+      text.textContent = "Daddy Chill 2" 
+   } else if(currentActive === 3) {
+      text.textContent = "Daddy Chill 3" 
+   } else if(currentActive === circle.length) {
+      text.textContent = "Daddy Chill 4" 
+   }
+   
 }
 
