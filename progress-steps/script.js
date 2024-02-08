@@ -51,7 +51,7 @@ const update = () => {
    }
 
    if(currentActive <= 1) {
-      text.textContent = "Daddy Chill" 
+      text.textContent = "Click next" 
    } else if(currentActive === 2) {
       text.textContent = "Daddy Chill 2" 
    } else if(currentActive === 3) {
